@@ -2,9 +2,6 @@ const express = require("express");
 const app = express();
 const preguntas = require ("./constantes/preguntas");
 
-res.header('Access-Control-Allow-Origin', "*");
-res.header('Access-Control-Allow-Headers', "*");
-
 app.get("/", function(request,response){
     response.send("hola mundos");
 });
